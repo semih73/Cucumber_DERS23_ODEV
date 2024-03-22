@@ -11,6 +11,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.log4testng.Logger;
 import utils.PropertyManager;
 
 import java.net.MalformedURLException;
@@ -24,9 +25,9 @@ public class DriverFactory {
 
     public static String browser;
     static PropertyManager propertyManager = new PropertyManager();
-
+    static final Logger logger = Logger.getLogger(DriverFactory.class);
     public static void initDriver() {
-
+        logger.info("Driver yükleniyor....");
         // Get settings from command line
 
 
@@ -135,6 +136,7 @@ public class DriverFactory {
     }
 
     public static void close() {
+        logger.info("Browser kapatılıyor....");
         currentDriver().close();
     }
 }
