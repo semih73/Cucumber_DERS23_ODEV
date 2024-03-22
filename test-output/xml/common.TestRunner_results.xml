@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Navigate and Verify Home Page"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="19,474">
+  <properties />
+  
+  
+            <testcase name="runScenario" time="3,967" classname="common.TestRunner" />
+                <testcase name="runScenario" time="1,048" classname="common.TestRunner" />
+                <testcase name="runScenario" time="13,016" classname="common.TestRunner" />
+                <testcase name="runScenario" time="1,443" classname="common.TestRunner" />
+      
+</testsuite>
